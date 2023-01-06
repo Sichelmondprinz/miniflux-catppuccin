@@ -1,0 +1,230 @@
+/* ==UserStyle==    
+@name           Miniflux Catppuccin
+@namespace      github.com/catppuccin/github
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+@preprocessor   stylus
+@var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha*"]
+==/UserStyle== */
+@-moz-document domain("feed.eventide.space") {
+    :root {
+        if (theme=="Latte") {
+
+            --rosewater: #dc8a78;
+            --flamingo: #dd7878;
+            --pink: #ea76cb;
+            --mauve: #8839ef;
+            --red: #d20f39;
+            --maroon: #e64553;
+            --peach: #fe640b;
+            --yellow: #df8e1d;
+            --green: #40a02b;
+            --teal: #179299;
+            --sky: #04a5e5;
+            --sapphire: #209fb5;
+            --blue: #1e66f5;
+            --lavender: #7287fd;
+
+            --text: #4c4f69;
+            --subtext1: #5c5f77;
+            --subtext0: #6c6f85;
+            --overlay2: #7c7f93;
+            --overlay1: #8c8fa1;
+            --overlay0: #9ca0b0;
+            --surface2: #acb0be;
+            --surface1: #bcc0cc;
+            --surface0: #ccd0da;
+            --base: #eff1f5;
+            --mantle: #e6e9ef;
+            --crust: #dce0e8;
+        }
+
+        else if (theme=="Frappe") {
+
+
+            --rosewater: #f2d5cf;
+            --flamingo: #eebebe;
+            --pink: #f4b8e4;
+            --mauve: #ca9ee6;
+            --red: #e78284;
+            --maroon: #ea999c;
+            --peach: #ef9f76;
+            --yellow: #e5c890;
+            --green: #a6d189;
+            --teal: #81c8be;
+            --sky: #99d1db;
+            --sapphire: #85c1dc;
+            --blue: #8caaee;
+            --lavender: #babbf1;
+
+            --text: #c6d0f5;
+            --subtext1: #b5bfe2;
+            --subtext0: #a5adce;
+            --overlay2: #949cbb;
+            --overlay1: #838ba7;
+            --overlay0: #737994;
+            --surface2: #626880;
+            --surface1: #51576d;
+            --surface0: #414559;
+            --base: #303446;
+            --mantle: #292c3c;
+            --crust: #232634;
+        }
+
+        else if (theme=="Macchiato") {
+
+            --rosewater: #f4dbd6;
+            --flamingo: #f0c6c6;
+            --pink: #f5bde6;
+            --mauve: #c6a0f6;
+            --red: #ed8796;
+            --maroon: #ee99a0;
+            --peach: #f5a97f;
+            --yellow: #eed49f;
+            --green: #a6da95;
+            --teal: #8bd5ca;
+            --sky: #91d7e3;
+            --sapphire: #7dc4e4;
+            --blue: #8aadf4;
+            --lavender: #b7bdf8;
+
+            --text: #cad3f5;
+            --subtext1: #b8c0e0;
+            --subtext0: #a5adcb;
+            --overlay2: #939ab7;
+            --overlay1: #8087a2;
+            --overlay0: #6e738d;
+            --surface2: #5b6078;
+            --surface1: #494d64;
+            --surface0: #363a4f;
+            --base: #24273a;
+            --mantle: #1e2030;
+            --crust: #181926;
+        }
+        else if (theme=="Mocha") {
+
+
+            --rosewater: #f5e0dc;
+            --flamingo: #f2cdcd;
+            --pink: #f5c2e7;
+            --mauve: #cba6f7;
+            --red: #f38ba8;
+            --maroon: #eba0ac;
+            --peach: #fab387;
+            --yellow: #f9e2af;
+            --green: #a6e3a1;
+            --teal: #94e2d5;
+            --sky: #89dceb;
+            --sapphire: #74c7ec;
+            --lavender: #b4befe;
+            --blue: #89b4fa;
+
+            --text: #cdd6f4;
+            --subtext1: #bac2de;
+            --subtext0: #a6adc8;
+            --overlay2: #9399b2;
+            --overlay1: #7f849c;
+            --overlay0: #6c7086;
+            --surface2: #585b70;
+            --surface1: #45475a;
+            --surface0: #313244;
+            --base: #1e1e2e;
+            --mantle: #181825;
+            --crust: #11111b;
+        }
+    }
+    .header li a:hover {
+        color: var(--blue);
+    }
+    .item-meta a {
+        color: var(--subtext0) &:hover {
+            color: var(--overlay2)
+        }
+    }
+
+    .entry-meta {
+        color: var(--subtext0);
+
+        .entry-website a {
+            color: var(--text)
+        }
+    }
+
+    .entry-date {
+        color: var(--subtext0)
+    }
+
+    :root {
+        --body-color: var(--text);
+        --body-background: var(--base);
+        --hr-border-color: var(--mantle);
+        --title-color: var(--subtext0);
+        --link-color: var(--subtext0);
+        --link-focus-color: var(--overlay1);
+        --link-hover-color: var(--overlay1);
+        --link-visited-color: var(--overlay2);
+        --header-link-color: var(--subtext0);
+        --header-link-focus-color: var(--blue);
+        --header-link-hover-color: var(--blue);
+        --header-active-link-color: var(--blue);
+        --page-header-title-color: var(--text);
+        --page-header-title-border-color: var(--mantle);
+        --logo-color: var(--text);
+        --logo-hover-color-span: var(--text);
+        --table-border-color: var(--mantle);
+        --table-th-background: var(--mantle);
+        --table-th-color: var(--subtext0);
+        --table-tr-hover-background-color: var(--base);
+        --table-tr-hover-color: var(--subtext1);
+        --button-primary-border-color: var(--mantle);
+        --button-primary-background: var(--blue);
+        --button-primary-color: var(--surface0);
+        --button-primary-focus-border-color: var(--blue);
+        --button-primary-focus-background: var(--lavender);
+        --input-border: 1px solid var(--text);
+        --input-background: var(--surface1);
+        --input-color: var(--text);
+        --input-placeholder-color: var(--subtext0);
+        --input-focus-color: var(--text);
+        --input-focus-border-color: var(--blue);
+        --input-focus-box-shadow: none;
+        --alert-color: var(--text);
+        --alert-background-color: var(--overlay0);
+        --alert-border-color: var(--mantle);
+        --alert-success-color: var(--base);
+        --alert-success-background-color: var(--overlay0);
+        --alert-success-border-color: var(--mantle);
+        --alert-error-color: var(--base);
+        --alert-error-background-color: var(--red);
+        --alert-error-border-color: var(--mantle);
+        --alert-info-color: var(--text);
+        --alert-info-background-color: var(--overlay0);
+        --alert-info-border-color: var(--mantle);
+        --panel-background: var(--overlay0);
+        --panel-border-color: var(--mantle);
+        --panel-color: var(--text);
+        --modal-background: var(--surface0);
+        --modal-color: var(--text);
+        --pagination-link-color: var(--text);
+        --category-color: var(--text);
+        --category-background-color: var(--surface1);
+        --category-border-color: var(--overlay2);
+        --category-link-color: var(--blue);
+        --category-link-hover-color: var(--subtext1);
+        --item-border-color: var(--text);
+        --item-title-link-font-weight: 400;
+        --item-status-read-title-link-color: var(--subtext0);
+        --entry-header-border-color: var(--blue);
+        --entry-header-title-link-color: var(--text);
+        --entry-content-color: var(--text);
+        --feed-parsing-error-background-color: var(--maroon);
+        --feed-parsing-error-border-color: var(--red);
+        --feed-has-unread-background-color: var(--surface0);
+        --feed-has-unread-border-color: var(--mantle);
+        --category-has-unread-background-color: var(--surface0);
+        --category-has-unread-border-color: var(--mantle);
+        --counter-color: var(--text);
+        --item-meta-focus-color: var(--subtext2)
+    }
+}
