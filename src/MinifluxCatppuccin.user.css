@@ -134,6 +134,17 @@
             --crust: #11111b;
         }
     }
+    
+    if (theme=="Latte") {
+        html {
+            color-scheme: light;
+        }
+    } else {
+        html {
+            color-scheme: dark;
+        }
+    }
+    
     .header li a:hover {
         color: var(--blue);
     }
