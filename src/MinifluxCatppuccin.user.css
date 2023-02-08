@@ -144,12 +144,16 @@
             color-scheme: dark;
         }
     }
-    
+
     .header li a:hover {
         color: var(--blue);
     }
+    .entry header h1 a:hover, .entry header h1 a:focus {
+        color: var(--link-hover-color)
+    }
     .item-meta a {
-        color: var(--subtext0) &:hover {
+        color: var(--subtext0)
+        &:hover {
             color: var(--overlay2)
         }
     }
@@ -164,6 +168,16 @@
 
     .entry-date {
         color: var(--subtext0)
+    }
+
+    .entry-content figcaption {
+        color: var(--subtext1)
+    }
+
+    .confirm {
+        &, > a {
+            color: var(--red)
+        }
     }
 
     :root {
